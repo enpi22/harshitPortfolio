@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e9fd771409.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/harshit.png" class="logo">
+                <ul id="sidemenu">
+                    <li onclick="closemenu()"><a href="#header">Home</a></li>
+                    <li onclick="closemenu()"><a href="#about">About</a></li>
+                    <li onclick="closemenu()"><a href="#services">Services</a></li>
+                    <li onclick="closemenu()"><a href="#projects">Projects</a></li>
+                    <li onclick="closemenu()"><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Kevin</span><br>Jen From Australia</h1>
+            </div> -->
+        </div>
+
+    </div>
+
+    <section class="parallax">
+        <img src="images/hill1.png" id="hill1">
+        <img src="images/hill2.png" id="hill2">
+        <img src="images/hill3.png" id="hill3">
+        <img src="images/hill4.png" id="hill4">
+        <img src="images/hill5.png" id="hill5">
+        <img src="images/tree.png" id="tree">
+        <img src="images/leaf.png" id="leaf">
+        <h2 id="text">Hello, this is <span id="harshit">Harshit</span></h2>
+        <img src="images/plant.png" id="plant">
+    </section>
+
+    <!-- about me section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Harshit, a driven frontend developer with a relentless passion for crafting seamless digital experiences. With an artistic flair and a mastery of HTML, CSS, and JavaScript, I transform static designs into interactive wonders. User-centric design is my compass, guiding me to create intuitive and visually appealing interfaces that leave a lasting impact. I thrive on continuous learning, staying at the forefront of emerging trends to deliver innovative solutions. Let's collaborate and turn your ideas into captivating realities together.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Used a few libraries to make prediction models</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android using Kotlin</li>
+                            <li><span>Languages</span><br>Familiar with C++, Java, HTML, CSS, JavaScript, Angular, Kotlin, Node JS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Thrinaina Informatics</span><br>Designed Web interfaces at Thrinaina Informatics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Delhi Public School</span><br>2007 - 2017<br>84%</li>
+                            <li><span>Excellencia Junior Collge</span><br>2017 - 2019<br>95%</li>
+                            <li><span>Mahindra University</span><br>2019 - present<br>8.1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Designer</h2>
+                    <p> As a frontend developer, I specialize in translating your visions into engaging user interfaces that captivate and connect. From responsive web designs to dynamic user interactions, I offer a range of services aimed at elevating your online presence. Let's collaborate and embark on a journey to create intuitive, aesthetically pleasing, and functionally robust digital solutions that leave a lasting impression.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>App Designer</h2>
+                    <p> I specialize in translating your unique concepts into intuitive and visually striking mobile and web applications. With a keen eye for detail and a deep understanding of user experience principles, I bring your ideas to life by designing seamless interfaces that engage and captivate users. Whether it's creating wireframes, crafting pixel-perfect UI designs, or optimizing for various devices, I am committed to delivering apps that not only meet your needs but also elevate your brand's digital presence. Let's collaborate and turn your app vision into a stunning reality.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Python Developer</h2>
+                    <p>My expertise as a Python Developer and my fascination with AI converge to offer you innovative solutions. As a Python enthusiast, I harness its versatility to develop robust applications and streamlined backend systems. But my passion doesn't stop there - I delve into the realm of AI, leveraging Python's power to create intelligent algorithms that learn and adapt. Whether it's crafting efficient code or exploring the realms of machine learning, I'm dedicated to infusing AI-driven brilliance into every project. Let's collaborate to bring your visions to life with a touch of Python magic and a dash of artificial intelligence innovation.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- my work -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App for College Students</h3>
+                        <p>The app connects you to the talented people around the college area.
+                        </p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Spotify Clone</h3>
+                        <p>A Spotify Clone which lets you play, pause music as you like
+                        </p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>ICDIC Dashboard for Tamil Nadu Government</h3>
+                        <p>A cool UI Dashboard for Tamil Nadu Government using Angular
+                        </p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png">
+                    <div class="layer">
+                        <h3>Short Video App</h3>
+                        <p>An app similar to tiktok reels but its purely educational
+                        </p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>reddyharshit8@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9848077477</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Harshit</p>
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxvG2J9TsQ7W-rAD6PdiEhSONBrfSBbUvDYuxEoPaK7cL6NOgA5VD_ZH9_JfxckL3mPcQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        let text = document.getElementById('text');
+        let leaf = document.getElementById('leaf');
+        let hill1 = document.getElementById('hill1');
+        let hill4 = document.getElementById('hill4');
+        let hill5 = document.getElementById('hill5');
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+
+            text.style.marginTop = value * 2.5 + 'px';
+            leaf.style.top = value * -1.5 + 'px';
+            leaf.style.left = value * 1.5 + 'px';
+            hill5.style.left = value * 1.5 + 'px';
+            hill4.style.left = value * -1.5 + 'px';
+            hill1.style.top = value * 1 + 'px';
+        });
+    </script>
+
+</body>
+
+</html>

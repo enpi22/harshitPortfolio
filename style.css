@@ -208,6 +208,9 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
+    .anchor{
+        text-decoration: none;
+    }
 }
 .layer h3{
     font-weight: 500;
